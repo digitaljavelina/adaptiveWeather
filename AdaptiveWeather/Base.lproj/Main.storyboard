@@ -29,8 +29,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e28-rA-xC4">
-                                        <rect key="frame" x="74" y="68" width="454" height="295"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e28-rA-xC4">
+                                        <rect key="frame" x="73" y="68" width="454" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -49,13 +49,41 @@
                         <color key="backgroundColor" red="0.29019607843137257" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lVc-I7-CDt" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="18z-I0-5TS"/>
+                            <constraint firstAttribute="centerY" secondItem="lVc-I7-CDt" secondAttribute="centerY" id="1jk-RS-eaW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qLJ-nK-bBY" secondAttribute="bottom" id="IM0-fb-GNe"/>
+                            <constraint firstItem="lVc-I7-CDt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="Qgn-OS-8Yf"/>
                             <constraint firstItem="qLJ-nK-bBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aeK-2p-0HF"/>
                             <constraint firstItem="lVc-I7-CDt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cWn-Ia-F4g"/>
+                            <constraint firstItem="qLJ-nK-bBY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="fHl-Gt-IOy"/>
                             <constraint firstItem="qLJ-nK-bBY" firstAttribute="top" secondItem="lVc-I7-CDt" secondAttribute="bottom" constant="20" id="kh2-tn-xGj"/>
                             <constraint firstAttribute="trailing" secondItem="qLJ-nK-bBY" secondAttribute="trailing" id="oei-Mz-jqD"/>
                             <constraint firstAttribute="centerX" secondItem="lVc-I7-CDt" secondAttribute="centerX" id="sg6-ab-wOM"/>
+                            <constraint firstItem="qLJ-nK-bBY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="teJ-gt-WTZ"/>
+                            <constraint firstItem="lVc-I7-CDt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="zex-M9-8JS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1jk-RS-eaW"/>
+                                <exclude reference="Qgn-OS-8Yf"/>
+                                <exclude reference="zex-M9-8JS"/>
+                                <exclude reference="fHl-Gt-IOy"/>
+                                <exclude reference="teJ-gt-WTZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="18z-I0-5TS"/>
+                                <include reference="1jk-RS-eaW"/>
+                                <include reference="Qgn-OS-8Yf"/>
+                                <exclude reference="cWn-Ia-F4g"/>
+                                <exclude reference="sg6-ab-wOM"/>
+                                <include reference="zex-M9-8JS"/>
+                                <exclude reference="aeK-2p-0HF"/>
+                                <include reference="fHl-Gt-IOy"/>
+                                <exclude reference="kh2-tn-xGj"/>
+                                <include reference="teJ-gt-WTZ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
