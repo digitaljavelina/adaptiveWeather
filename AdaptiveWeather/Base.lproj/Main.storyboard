@@ -23,26 +23,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLJ-nK-bBY" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJJ-9f-5f9">
-                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fJJ-9f-5f9">
+                                        <rect key="frame" x="0.0" y="10" width="600" height="177"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
+                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e28-rA-xC4">
-                                        <rect key="frame" x="73" y="68" width="454" height="295"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e28-rA-xC4">
+                                        <rect key="frame" x="0.0" y="68" width="600" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
                                 <constraints>
+                                    <constraint firstItem="fJJ-9f-5f9" firstAttribute="width" secondItem="qLJ-nK-bBY" secondAttribute="width" id="9im-eD-xhz"/>
                                     <constraint firstAttribute="centerX" secondItem="fJJ-9f-5f9" secondAttribute="centerX" id="ADM-sW-42f"/>
                                     <constraint firstAttribute="bottom" secondItem="e28-rA-xC4" secondAttribute="bottom" id="Bjg-0q-wrH"/>
                                     <constraint firstAttribute="centerX" secondItem="e28-rA-xC4" secondAttribute="centerX" id="Ivt-zh-3TL"/>
                                     <constraint firstItem="fJJ-9f-5f9" firstAttribute="top" secondItem="qLJ-nK-bBY" secondAttribute="top" constant="10" id="Txk-Cq-22w"/>
+                                    <constraint firstItem="e28-rA-xC4" firstAttribute="width" secondItem="qLJ-nK-bBY" secondAttribute="width" id="cFN-XM-HaP"/>
                                 </constraints>
                             </view>
                         </subviews>
